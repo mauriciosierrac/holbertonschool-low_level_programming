@@ -22,8 +22,8 @@ putchar(y);
 if (x != 57 || y != 57)
 {
 putchar(',');
-}
 putchar(32);
+}
 y++;
 
 }
