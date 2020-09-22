@@ -1,7 +1,7 @@
-include "holberton.h"
+#include "holberton.h"
 
 /**
-* print_alphabet - print alphabet in lowercase
+* print_alphabet_x10 - print alphabet in lowercase for ten times
 *
 * Return :0
 **/
@@ -9,16 +9,18 @@ include "holberton.h"
 
 void print_alphabet_x10(void)
 {
-int a, x;
+int a = 'a';
+int x = 0;
 
-for (x = 0; x < 10; x++)
+while (x <= 10)
 {
-
-for ( a = 'a'; a <= 'z'; a++)
+while (a <= 'z')
 {
 _putchar(a);
-
+a++;
 }
 _putchar('\n');
+x++;
+a = 'a';
 }
 }
