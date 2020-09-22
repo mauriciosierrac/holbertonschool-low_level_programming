@@ -10,33 +10,19 @@
 
 void jack_bauer(void)
 {
-int a = 48, b = 48, c = 48, d = 48;
+int a, b;
 
-while (a > 47 && a < 51)
+for (a = 0; a < 24; a++)
 {
-while (b > 47 && b < 52)
+for (b = 0; b <= 59; b++)
 {
-while (b > 47 && c < 54)
-{
-while (d > 47 && d < 58)
-{
-_putchar(a);
-_putchar(b);
+_putchar((a / 10) + '0');
+_putchar((a % 10) + '0');
 _putchar(58);
-_putchar(c);
-_putchar(d);
+_putchar((b / 10) + '0');
+_putchar((b % 10) + '0');
 _putchar('\n');
-d++;
 }
-c++;
-d = 48;
 }
-b++;
-c = 48;
-}
-a++;
-b = 48;
-}
-
 
 }
