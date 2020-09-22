@@ -1,0 +1,23 @@
+#include "holberton.h"
+
+/**
+* main - print holberton
+*
+* Return: 0
+**/
+
+
+int main(void)
+{
+
+putchar("H");
+ putchar("H");
+ putchar("H");
+ putchar("H");
+ putchar("H");
+ putchar("H");
+ putchar("H");
+
+
+return (0);
+}
