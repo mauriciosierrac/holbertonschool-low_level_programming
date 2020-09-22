@@ -21,8 +21,15 @@ last = n % 10;
 _putchar(last + 48);
 }
 else
+if (n > 0)
 {
 last = n % 10;
+_putchar(last + 48);
+}
+else
+if (n == 0)
+{
+last = n;
 _putchar(last + 48);
 }
 
