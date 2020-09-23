@@ -28,8 +28,8 @@ _putchar(last + '0');
 }
 else
 {
-last = n;
-_putchar(last + '0');
+
+_putchar(n + '0');
 }
 
 return (last);
