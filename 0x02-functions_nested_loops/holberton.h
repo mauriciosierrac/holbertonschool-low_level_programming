@@ -2,8 +2,9 @@
 #define HOLBERTON_C
 
 int _putchar(char c);
-void jack_bauer(void);
+int add(int a , int b);
 
+/**void times_table(void); **/
 
 
 #endif
