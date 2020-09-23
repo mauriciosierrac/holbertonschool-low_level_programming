@@ -3,10 +3,6 @@
 /**
 * times_table -  print 9 times table.
 *
-* @c: variable
-* @a: variable
-* @b: variable
-*
 * Return: void
 **/
 
@@ -22,18 +18,23 @@ while (b < 10)
 c = a * b;
 if (c > 9)
 {
-_putchar((c / 10) + '0');
-_putchar((c % 10) + '0');
 _putchar(',');
 _putchar(' ');
+_putchar((c / 10) + '0');
+_putchar((c % 10) + '0');
 
+}
+else
+if (c > 0 && c <= 9)
+{
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
+_putchar(c + '0');
 }
 else
 {
 _putchar(c + '0');
-_putchar(',');
-_putchar(' ');
-_putchar(' ');
 }
 b++;
 }
