@@ -8,7 +8,7 @@
 *
 * @b :  variable of 10-main
 *
-* Return : sum
+* Return: sum
 *
 * int : variable
 **/
