@@ -14,10 +14,7 @@ int a;
 
 while (a <= n)
 {
-if (a < n)
-{
-_putchar(' ');
-}
+  _putchar(' ');
 if (a == n)
 {
 _putchar('\\');
