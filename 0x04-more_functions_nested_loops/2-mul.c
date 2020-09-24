@@ -1,9 +1,9 @@
-#include "holberton.h"
+B#include "holberton.h"
 
 /**
  * mul - function that multiplies 2 integers
  *
- * @a: parameter 
+ * @a: parameter
  * @b: parameter
  * Return: res
  **/
@@ -11,9 +11,9 @@
 int mul(int a, int b)
 {
 
-  int res;
+int res;
 
-  res = a * b;
+res = a * b;
 
-  return (res);
+return (res);
 }
