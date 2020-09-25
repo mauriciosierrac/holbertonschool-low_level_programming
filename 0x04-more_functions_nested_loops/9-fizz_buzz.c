@@ -10,7 +10,6 @@ int main(void)
 {
 
 int x;
-
 for (x = 1; x <= 100; x++)
 {
 if (x % 3 == 0 && x % 5 == 0)
@@ -31,6 +30,6 @@ else
 printf("%d ", x);
 }
 printf("\n");
-return (0);
 
+return(0);
 }
