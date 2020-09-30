@@ -1,0 +1,23 @@
+#include "holberton.h"
+#include <stdio.h>
+
+/**
+ * _strcpy - copy a string in other
+ * @dest: destiny string
+ * @src: origin string
+ * Return: the string copy
+ **/
+
+char *_strcpy(char *dest, char *src)
+{
+
+int size;
+
+for (size = 0; size <= src[size] != '\0'; size++)
+{
+dest[size] = src[size];
+}
+dest[size] = '\0';
+
+return (dest);
+}
