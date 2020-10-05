@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 
 /**
  * _strpbrk - find the character and to display string
