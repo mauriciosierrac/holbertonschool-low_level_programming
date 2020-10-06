@@ -1,0 +1,21 @@
+B#include "holberton.h"
+
+/**
+ * _strstr - copy string
+ * @haystack: string large
+ * @needle: string to find
+ * Return: string equals
+ *
+ **/
+
+char *_strstr(char *haystack, char *needle)
+{
+unsigned int j, i;
+
+for (i = 0; needle[i] != '\0'; i++)
+for (j = 0; haystack[j] != '\0'; j++)
+if (haystack[j] == needle[i])
+return (&haystack[j]);
+
+return (0);
+}
