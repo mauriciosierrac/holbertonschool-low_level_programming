@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 
 /**
  * factorial - print factorial of number
