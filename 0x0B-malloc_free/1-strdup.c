@@ -21,7 +21,8 @@ return (NULL);
 
 for (i = 0; str[i] != '\0'; i++)
 ;
-copy = malloc((i + 1) * sizeof(str));
+
+copy = malloc(i + 1);
 
 if (copy == NULL)
 {
