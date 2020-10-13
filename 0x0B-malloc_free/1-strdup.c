@@ -22,6 +22,8 @@ if (copy == NULL)
 {
 return (NULL);
 }
+
+
 if (str == NULL)
 {
 return (NULL);
@@ -31,7 +33,7 @@ for (x = 0; str[x] != '\0'; x++)
 {
 copy[x] = str[x];
 }
-copy[x] = '\0';
+
 return (copy);
 
 }
