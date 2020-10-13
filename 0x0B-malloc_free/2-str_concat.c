@@ -26,7 +26,7 @@ for (a = 0; s1[a] != '\0'; a++)
 for (b = 0; s2[b] != '\0'; b++)
 ;
 
-conc = malloc((a + 1) + (b + 1));
+conc = malloc((a + 1) + (b));
 if (conc == NULL)
 {
 return (NULL);
