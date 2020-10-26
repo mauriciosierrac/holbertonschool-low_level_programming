@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <stdarg.h>
 /**
  * print_all - function that print char, integer or string
  * @format: type of parameters
