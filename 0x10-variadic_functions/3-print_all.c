@@ -1,5 +1,4 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
 
 /**
  * print_all - function that print char, integer or string
@@ -13,10 +12,10 @@ unsigned int i = 0, j = 1;
 char *p;
 va_list arg;
 
-while (format)
+while (format != NULL)
 {
 va_start(arg, format);
-while (format[i])
+while (format[i] != '\0')
 {
 switch (format[i])
 {
@@ -33,8 +32,7 @@ case 's':
 p = va_arg(arg, char *);
 if (p == NULL)
 p = "(nil)";
-else
-printf ("%s", p);	 
+printf("%s", p);
 break;
 default:
 j = 0;
