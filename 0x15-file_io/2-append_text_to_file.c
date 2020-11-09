@@ -8,15 +8,18 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int size = 0;
+	int size;
 	ssize_t f, w;
 
 	if (filename == NULL)
 		return (-1);
-
-	while (text_content[size])
+	if (text_content)
 	{
-		size++;
+		size = 0;
+		while (text_content[size])
+		{
+			size++;
+		}
 	}
 
 	f = open(filename, O_WRONLY | O_APPEND);
