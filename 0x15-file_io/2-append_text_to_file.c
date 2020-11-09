@@ -13,6 +13,11 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
+
+	f = open(filename, O_WRONLY | O_APPEND);
+	if (f == -1)
+		return (-1);
+
 	if (text_content)
 	{
 		size = 0;
@@ -20,16 +25,12 @@ int append_text_to_file(const char *filename, char *text_content)
 		{
 			size++;
 		}
+
+		w = write(f, text_content, size);
+		if (w == -1)
+			return (-1);
 	}
 
-	f = open(filename, O_WRONLY | O_APPEND);
-	if (f == -1)
-		return (0);
-
-	w = write(f, text_content, size);
-	if (w == -1)
-		return (0);
-
 	close(f);
-	return (w);
+	return (1);
 }
