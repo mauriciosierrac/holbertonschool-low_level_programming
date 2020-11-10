@@ -16,12 +16,8 @@ int main(int argc, char **arg)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 
 	f1 = open(arg[1], O_RDONLY);
-	if (f1 == -1)
-		return (-1);
 
 	f2 = open(arg[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (f2 == -1)
-		return (-1);
 
 	while (rf1 == 1024)
 	{
@@ -29,12 +25,12 @@ int main(int argc, char **arg)
 		wf2 = write(f1, buf, rf1);
 	}
 
-	if (rf1 == -1)
+	if (rf1 == -1 || f1 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", arg[1]), exit(98);
 	}
 
-	if (wf2 == -1)
+	if (wf2 == -1 || f2 == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", arg[2]), exit(99);
 	}
