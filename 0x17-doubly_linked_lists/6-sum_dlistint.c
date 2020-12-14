@@ -14,7 +14,7 @@ int sum_dlistint(dlistint_t *head)
 	{
 		if (head == NULL)
 		{
-			return (NULL);
+			return (0);
 		}
 		node = head;
 		head = head->next;
