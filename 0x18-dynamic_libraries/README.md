@@ -27,5 +27,5 @@ What you should learn from this project:
 
 ---
 
-## Author
+## Author :sunglasses:
 * **Mauricio Sierra Cifuentes** - [mauriciosierrac](https://github.com/mauriciosierrac)
